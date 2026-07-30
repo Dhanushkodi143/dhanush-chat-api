@@ -60,7 +60,7 @@ export default async function handler(req, res) {
         if (!geminiResponse.ok) {
             const errText = await geminiResponse.text();
             console.error('Gemini API error:', errText);
-            return res.status(502).json({ error: 'Upstream AI request failed' });
+            return res.status(502).json({ error: `Upstream AI request failed: ${errText}` });
         }
 
         const data = await geminiResponse.json();
