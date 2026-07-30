@@ -54,4 +54,4 @@ Velalar College of Engineering (Anna University) | Erode, India | May 2022
 
 LANGUAGES:
 English – Professional Proficiency, Tamil – Native
-\`.trim();
+`.trim();
